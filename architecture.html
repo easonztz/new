@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture</title>
+    <link rel="stylesheet" href="cookies.css">
+  <script src="https://kit.fontawesome.com/b74d1b524a.js" crossorigin="anonymous"></script>
+    <!---custom css link-->
+    <link rel="stylesheet" href="architecture.css">
+      <!-----footer link----->
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-----header link----->
+    <link rel="stylesheet" href="header.css">
+    <!--Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<div id="google_translate_element"></div>
+<script src="script.js"></script>
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement(
+                        {pageLanguage: 'en'},
+                            'google_translate_element'
+                    );
+                } 
+  </script>
+
+<!-- to your js part -->
+
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <!--Bootstrap js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<body>
+  <div id="google_translate_element"></div> 
+  <!-- header --> 
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand me-auto" href="home.html"><img src="home_images/logo.png" alt="Logo"></a>
+  
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <a class="navbar-brand me-auto" href="home.html"><img src="home_images/logo.png" alt="Logo"></a>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2 " href="ethnic.html">Ethnic Groups</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="food.html">Food & Cuisine</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link mx-lg-2 active" href="architecture.html">Architecture</a>
+              </li>
+
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="festival.html">Festivals</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="game.html">Traditional Games</a>
+              </li>
+
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="event.html">Upcoming Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="index.html">Traditional Music</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="feedback.html">Feedback</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+      <a href="login.html" class="login-button">LOGIN</a>
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+ 
+    <!-- carousel -->
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="images/crystalmosque2.jpg">
+                <div class="content">
+                    <div class="name">CRYSTAL MOSQUE</div>
+                    <div class="location">Kuala Terengganu</div>
+                    <div class="buttons">
+                      <button><a href="#crystal-mosque-section">SEE MORE</a></button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/Kek_Lok_Si_Temple.jpg">
+                <div class="content">
+                    <div class="name">KEK LOK SI TEMPLE</div>
+                    <div class="location">George Town, Pulau Pinang</div>
+                    <div class="buttons">
+                      <button><a href="#crystal-mosque-section">SEE MORE</a></button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/clock_tower1.jpg">
+                <div class="content">
+                    <div class="name">TELUK INTAN LEANING CLOCK TOWER</div>
+                    <div class="location">Teluk Intan, Perak</div>
+                    <div class="buttons">
+                      <button><a href="#teluk-intan-clock-tower-section">SEE MORE</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/SRI SHAKTI TEMPLE.jpg">
+                <div class="content">
+                    <div class="name">SRI SHAKTI TEMPLE</div>
+                    <div class="location">Bukit Rotan, Selangor</div>
+                    <div class="buttons">
+                      <button><a href="#sri-shakti-temple-section">SEE MORE</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- list thumbnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="images/crystalmosque2.jpg">
+                <div class="content">
+                    <div class="name">
+                        CRYSTAL MOSQUE
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/Kek_Lok_Si_Temple.jpg">
+                <div class="content">
+                    <div class="name">
+                        KEK LOK SI TEMPLE
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/clock_tower1.jpg">
+                <div class="content">
+                    <div class="name">
+                      TELUK INTAN LEANING CLOCK TOWER
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/SRI SHAKTI TEMPLE.jpg">
+                <div class="content">
+                    <div class="name">
+                      SRI SHAKTI TEMPLE
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+
+    <script src="architecture.js"></script>
+    <div class="sec" id="crystal-mosque-section">
+      <h2>CRYSTAL MOSQUE</h2>
+      <div class="slideshow-container">
+  
+          <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="images/crystalmosque.jpg" style="width:100%">
+          </div>
+  
+          <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="images/crystalmosque1.jpg" style="width:100%">
+          </div>
+  
+          <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="images/crystalmosque3.jpg" style="width:100%">
+          </div>
+  
+      </div>
+      <br>
+  
+      <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+  
+      </div>
+      <br>
+      <div style="display: flex; align-items: center;">
+        <iframe data-aos="fade-right" width="5500" height="310" src="https://www.youtube.com/embed/eQJ9hrkxNxk?si=JCUe-B4mvFLfdqaf" title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p data-aos="fade-left" style="margin-left: 20px; text-align: justify;">A grand structure made of steel, glass and crystal, the mosque is located at the Islamic Heritage Park on the island of Wan Man. The mosque was constructed between 2006 and 2008, and was officially inaugurated on 8 February 2008 by the 13th Yang di-Pertuan Agong, Sultan Mizan Zainal Abidin of Terengganu. It has the capacity to accommodate over 1,500 worshipers at a time. The uniqueness of the mosque comes from its interesting exterior. The mosque is coated with steel, glass and crystal which are the three main materials in the development of this magnificent piece of architecture which gave it its name. Its sleek and modern look is reflected off the river surrounding the mosque. The illumination from inside the mosque also makes it look like the glass domes are shining. The Crystal Mosque is able to accommodate up to 1,500 worshippers at a given time and also made its name internationally for its beauty.
+        </p>
+      </div>
+      <br><br><br><br><br><br>
+      <div style="border-bottom: 3px solid rgb(131, 160, 162); margin-bottom: 20px;"></div>
+    </div>
+  
+    <div class="sec" id="kek-lok-si-temple-section">
+      <h2>KEK LOK SI TEMPLE</h2>
+      <div class="slideshow-container">
+  
+        <div class="mySlides1 fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/Kek_Lok_Si_Temple1.jpg" style="width:100%">
+        </div>
+  
+        <div class="mySlides1 fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/Kek_Lok_Si_Temple2.jpg" style="width:100%">
+        </div>
+  
+        <div class="mySlides1 fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/Kek_Lok_Si_Temple3.jpg" style="width:100%">
+        </div>
+  
+    </div>
+    <br>
+  
+    <div style="text-align:center">
+        <span class="dot1"></span>
+        <span class="dot1"></span>
+        <span class="dot1"></span>
+  
+    </div>
+    <br>
+      <div style="display: flex; align-items: center;">
+        <p data-aos="fade-right" style="margin-left: 20px; margin-right: 20px; text-align: justify;">
+          Kek Lok Si Temple ( simplified Chinese :极乐寺; traditional Chinese :極樂寺; pinyin : Jílè sì ) is a Buddhist temple located in Ayer Itam , Penang , Malaysia ; It is the largest temple in Penang and one of the most famous in Southeast Asia .It was built in 1890. This temple is not only an important pilgrimage center for Buddhists from Hong Kong , the Philippines , Singapore , and other countries in Southeast Asia , but also one of the tourist attractions in Penang . It becomes a major attraction during the local community's Chinese New Year celebrations where the temple doors remain open until late at night while thousands of lights shine as far as the eye can see; the complex is also decorated with thousands of lanterns representing the donations offered by devotees. Another feature of the festival is the long procession by hundreds of monks visiting from Thailand to this temple which takes place once or twice a year.
+        </p>
+        <iframe width="4500" height="315" src="https://www.youtube.com/embed/meaiX6TXZ4w?si=hhiNZ8uGZv-imK83" title="YouTube video player" frameborder="0" allow="accelerometer; 
+        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <br /><br /><br /><br /><br /><br />
+      <div style="border-bottom: 3px solid rgb(131, 160, 162); margin-bottom: 20px;"></div>
+    </div>
+    <div class="sec" id="teluk-intan-clock-tower-section">
+      <h2>TELUK INTAN LEANING CLOCK TOWER</h2>
+      <div class="slideshow-container">
+  
+          <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="images/clock_tower.jpg" style="width:100%">
+          </div>
+  
+          <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="images/clock_tower2.jpg" style="width:100%">
+          </div>
+  
+          <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="images/clock_tower3.jpg" style="width:100%">
+          </div>
+  
+      </div>
+      <br>
+  
+      <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+  
+      </div>
+      <br>
+      <div style="display: flex; align-items: center;">
+        <iframe data-aos="fade-right" width="5500" height="310" src="https://www.youtube.com/embed/M-r4u_QpwIA?si=R80ugyHDxEYzYjCk&amp;controls=0" title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p data-aos="fade-left" style="margin-left: 20px; text-align: justify;">Menara Condong Teluk Intan is a water tank tower that was later turned into a clock tower located in Teluk Intan , Perak . It has been a landmark of the city of Teluk Intan for some time. The uniqueness of this tower is that it resembles the Tower of Pisa , Italy . This tower was built in 1885. It has a height of 85 feet and there are 110 steps. Despite being over 100 years old, it still stands strong. This tower was actually a water reservoir before there was a water tank in Changkat Jong. This three-story building is equipped with a large clock. Now, this tower is no longer in use and is only an attraction for tourists visiting the city of Teluk Intan. The lower part is decorated with beautiful landscaping such as flower pots, marble floors and lounge chairs for the whole family to relax. Now, the ancient building has earned the nickname of the second Leaning Tower in the world after the Leaning Tower of Pisa in Italy.
+      </div>
+      <br><br><br><br><br><br>
+      <div style="border-bottom: 3px solid rgb(131, 160, 162); margin-bottom: 20px;"></div>
+    </div>
+    <div class="sec" id="sri-shakti-temple-section">
+      <h2>SRI SHAKTI TEMPLE</h2>
+      <div class="slideshow-container">
+  
+        <div class="mySlides2 fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/SRI SHAKTI TEMPLE1.jpg" style="width:100%">
+        </div>
+  
+        <div class="mySlides2 fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/SRI SHAKTI TEMPLE2.jpg.jpg" style="width:100%">
+        </div>
+  
+        <div class="mySlides2 fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/SRI SHAKTI TEMPLE3.jpg.jpg" style="width:100%">
+        </div>
+  
+    </div>
+    <br>
+  
+    <div style="text-align:center">
+        <span class="dot2"></span>
+        <span class="dot2"></span>
+        <span class="dot2"></span>
+  
+    </div>
+      <div style="display: flex; align-items: center;">
+        <iframe data-aos="fade-right" width="6000" height="315" src="https://www.youtube.com/embed/H3qGEKs0QGA?si=ohgzDCSKN2_i9b4V" title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p data-aos="fade-left"style="margin-left: 20px; text-align: justify;">Sri Shakti Temple, popularly known as Sri Shakti Devasthanam is a magnificent Hindu Temple established in the serenity of Bukit Rotan village of Kuala Selangor. The only temple in the world with 51 Shakti illustrations crafted all over an acre of land, Sri Shakti Temple is a perfect epitome of Indian architecture or Hindu Sirpa Sastras. The temple is strictly built keeping all the Hindu scriptures in mind, like Vedas and Agamas with exceptionally used sculptural technique, Thundu Pattirippu Pathroba Pathram. The entrance is as high as 18 feet chiseled with lions, elephants, and other intricate sculptures and designs. The 5 storeyed temple is crafted on 96 pillars which depicts the 96 Hinduism principles. The main deity of Maa Shakti along with her 51 avatars is placed in the main hall, architecture with different shlokas of Hindu religion, and a massive brass bell in between. Dive in the world of Hindu spiritualism offering prayers and flowers in the feet of various deities in the temple including Navgraha, Lord Ganesha and other Hindu Gods. Don't miss taking the prasadam served every day in the hall of the temple before departing from the temple hall towards its landscaped garden.
+        </p>
+      </div>
+      <br /><br /><br /><br /><br /><br />
+    </div>
+    
+  
+
+
+
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+  <!-- Footer -->
+  <footer>
+    <div class="footer-col">
+        <ul>
+            <li><a href="home.html"><img src = "ethnic_images/logo.png" width = "100"></a></li>
+        </ul>
+        <p>Introduction to Cultures in Malaysia</p>
+        <p><br><br>Copyright &copy; 2024 4in1.</p>
+    </div>
+
+    <div class="footer-col">
+        <h4>EXPLORE MALAYSIA</h4>
+        <ul>
+            <li><a href="ethnic.html">Ethnic Groups</a></li>
+            <li><a href="food.html">Food & Cuisine</a></li>
+            <li><a href="game.html">Traditional Games</a></li>
+            <li><a href="festival.html">Festivals</a></li>
+            <li><a href="architecture">Architecture</a></li>
+            <li><a href="event.html">Upcoming Events</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-col">
+        <h4>CONTACT US</h4>
+        <ul>
+            <li><a href="feedback.html">Feedback</a></li>
+            <br>
+            <li><i class = "fas fa-phone-alt"></i> +03-9086 0288</li>
+            <br>
+            <li><a href="mailto: 4in1support@gmail.com"><i class = "fas fa-envelope"></i> 4in1support@gmail.com</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-col">
+        <h4>FOLLOW US</h4>
+        <div class="links">
+            <a href="https://youtube.com"><i class = "fab fa-youtube"></i></i></a>
+            <a href="https://tiktok.com"><i class = "fab fa-tiktok"></i></a>
+            <a href="https://www.facebook.com"><i class = "fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com"><i class = "fab fa-instagram"></i></a>
+            <a href="https://twitter.com"><i class = "fab fa-twitter"></i></a>
+        </div>    
+    </div>
+
+</footer>
+  
+<button id="back-to-top" style="
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+" title="Go to top"><img src="images/arrow.png" style="
+    width: 30px;
+    height: auto;
+"></button>
+
+
+  <!---custom js file link-->
+  <script>
+    const backToTopButton = document.getElementById("back-to-top");
+
+    backToTopButton.style.display = "none";
+
+    window.addEventListener("scroll", function () {
+      if (document.documentElement.scrollTop > window.innerHeight / 2) {
+        backToTopButton.style.display = "block";
+      } else {
+        backToTopButton.style.display = "none";
+      }
+    });
+
+    backToTopButton.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+</script>
+<script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 2500); // Change image every 2.5 seconds
+  }
+
+
+
+</script>
+
+<script>
+  let slideIndex1 = 0;
+  showSlides1();
+
+  function showSlides1() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides1");
+      let dots = document.getElementsByClassName("dot1");
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      slideIndex1++;
+      if (slideIndex1 > slides.length) { slideIndex1 = 1 }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex1 - 1].style.display = "block";
+      dots[slideIndex1 - 1].className += " active";
+      setTimeout(showSlides1, 2500); // Change image every 2.5 seconds
+  }
+
+
+
+</script>
+
+<script>
+  let slideIndex2 = 0;
+  showSlides2();
+
+  function showSlides2() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides2");
+      let dots = document.getElementsByClassName("dot2");
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      slideIndex2++;
+      if (slideIndex2 > slides.length) { slideIndex2 = 1 }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex2 - 1].style.display = "block";
+      dots[slideIndex2 - 1].className += " active";
+      setTimeout(showSlides2, 2500); // Change image every 2.5 seconds
+  }
+  
+
+
+
+</script>
+<div id="cookies">
+  <div class="cookies-container">
+      <div class="cookies-subcontainer">
+          <div class="cookies">
+              <p>This website uses cookies to ensure you get the best experience on our website.
+                  <a href="">More info</a>
+              </p>
+              <button id="cookies-btn">Confirm</button>
+          </div>
+      </div>
+  </div>
+</div>
+<script src="cookies.js"></script>
+<script src="game.css"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 3000,
+    once: true,
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<div id="google_translate_element"></div> 
+
+  <!-- Google Translate script -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {pageLanguage: 'en'},
+            'google_translate_element'
+        );
+    } 
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<!-- to your js part -->
+
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!--Bootstrap js-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+
+

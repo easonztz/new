@@ -1,0 +1,374 @@
+header{
+  margin: 0;
+  color: #eee;
+  font-family: Poppins;
+  font-size: 12px;
+}
+a{
+  text-decoration: none;
+}
+svg{
+  width: 25px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    
+}
+  
+  .text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .text-box h1 {
+    font-size: 62px;
+  }
+ 
+
+
+ 
+  
+  
+  
+  h1{
+    font-size: 36px;
+    font-weight: 600;
+  }
+  
+  p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+  }
+  
+  .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .food {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  .food-col {
+  
+    flex-basis: 31%;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .food-col img {
+    width: 100%;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: -50px;
+    padding-bottom: -20px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+  }
+  
+  .layer:hover {
+    background: rgba(193, 47, 47, 0.7);
+  }
+  
+  @media(max-width: 700px) {
+    .row{
+      flex-direction: column;
+    }
+    .food-col {
+      flex-direction: column;
+    }
+
+    }
+      
+  
+  .layer h3 {
+    width: 100%;
+    padding-top: 50%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 36px;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    transition: 0.6s;
+  }
+/*pictue scroll*/
+.scroll {
+    min-height: 85vh;
+    width: 100%;
+    background: #010114;
+    background-position: center;
+    background-size: cover;
+    
+  }
+  
+
+.imgScroll{
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+    
+    
+}
+.scroll h1{
+    width: 80%;
+    font-size: 50px;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    color: #fff;
+}
+.scroll h6{
+    width: 80%;
+    font-size: 15px;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    color: #fff;
+}
+.scroll h3{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+    color: #fff;
+}
+.imgScroll div{
+    display: flex;
+    animation: animate 40s linear infinite;
+    animation-delay: -40s;
+}
+
+
+.imgScroll div:nth-child(2){
+    animation: animate2 40s linear infinite;
+    animation-delay: -20s;
+}
+
+.imgScroll:hover div,
+.imgScroll:hover div:nth-child(2)
+{
+    animation-play-state: paused;
+}
+@keyframes animate{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes animate2{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+
+}
+.imgScroll div img{
+    margin: 0 25px;
+    max-width: 300px;
+    border: 10px solid transparent;
+    transition: 0.25s;
+}
+.imgScroll div img:hover{
+    border: 10px solid #fff;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+.imgScroll :hover div img{
+    opacity: 0.05;
+    filter: blur(5px);
+}
+.imgScroll div img:hover{
+    opacity: 1;
+    filter: blur(0px);
+}
+
+/*sec 01^*/
+@import url('https://fonts.googleapis.com/css2?familt=Poppins:wght@100;200;300;400;500;600;700;800');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #010114;
+}
+.sec-01{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    color: #fff;
+    background-color: #010114;
+    margin-top: 10vh;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+    
+}
+.main-title{
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 50px;
+    
+}
+.content{
+    position: relative;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.content .image{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+.content .image img{
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+.content .text-box{
+    z-index: 222;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 600px;
+    max-height: 250;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    transform:  translate(-80px,50px);
+}
+.content .text-box h3{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/*sec2*/
+.sec-02{
+    background-color: #010114;
+    padding-top: 30vh;
+}
+.section-title{
+    font-size: 3em;
+    margin-bottom: 80px;
+    color: white;
+
+}
+.info-title{
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: white;
+}
+.info{
+    width: 700px;
+    margin-left: 50px;
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    .content {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center; /* Center-align text on smaller screens */
+        font-size: 14px;
+        height: 100vh; /* Set the height of the container to full viewport height */
+        justify-content: center; /* Center-align items vertically */
+    }
+
+    .content .image {
+        margin: 20px auto; /* Add some spacing between image and text */
+        height: 300px;
+        width: 500px;
+    }
+
+    .content .text-box {
+        margin: auto; /* Center-align text box */
+        text-align: right;
+        padding: 0%;
+        left: 30%;
+    }
+    
+    
+
+    .info-title {
+        text-align: center; /* Center-align title */
+        
+    }
+    .info {
+        left: 0;
+        padding: none;
+        margin: 0 200px 0 200px;
+    }
+    .text-box p{
+        text-align: center; /* Center-align paragraph */
+        margin: 0 100px 0 100px;
+        font-size: 20px;
+    }
+
+    .info p{
+        text-align: center; /* Center-align paragraph */
+        margin: 0 100px 0 100px;
+        font-size: 20px;
+        
+    }
+}
+  
+    
+    
+
+
+
+
+

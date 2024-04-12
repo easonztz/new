@@ -1,0 +1,530 @@
+header{
+  margin: 0;
+  color: #eee;
+  font-family: Poppins;
+  font-size: 12px;
+}
+
+.navbar{
+  background-color: #fff;
+  height: 60px;
+  margin: 15px;
+  border-radius: 16px;
+  padding: 0.5rem;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.navbar-brand img {
+  width: 80px;
+  height: auto;
+  margin-right: 10px;
+  padding: 2px;
+  background-color: #000;
+}
+
+.login-button{
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+}
+
+.login-button:hover{
+  background-color: #F59A39;
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar-toggler-icon{
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  background-color: #fff;
+}
+
+.navbar-toggler:focus, 
+.btn-close:focus{
+  box-shadow: none;
+  outline: none;
+}
+
+ul .nav-link{
+  color: #666777;
+  font-weight: 500;
+  position: relative;
+}
+
+ul .nav-link:hover,
+ul .nav-link.active{
+  color: #000;
+}
+
+@media(min-width: 991px){
+  ul .nav-link::before{
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background-color: #F59A39;
+      visibility: hidden;
+      transition: 0.3s ease-in-out;
+  }
+
+  ul .nav-link:hover::before,
+  ul .nav-link.active::before{
+      width: 100%;
+      visibility: visible;
+  }
+}
+
+a{
+  text-decoration: none;
+}
+svg{
+  width: 25px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .header{
+    background-color: #000000;
+  }
+  .scroll {
+    min-height: 90vh;
+    width: 100%;
+    background: linear-gradient(rgba(4,9,30,0.7),
+    rgba(4,9,30,0.7)),url(images/hotpot.jpg);
+    background-position: center;
+    background-size: cover;
+    
+  }
+  .scroll h1{
+    font-size: 62px;
+    margin: auto;
+    text-align: center;
+    padding-top: 30vh;
+    color: #fff;
+    padding-bottom: 10vh;
+}
+  
+
+
+
+  
+  
+  .hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 0.5s; /* Changed ls to 0.5s */
+}
+  nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav img {
+    width: 150px;
+  }
+  
+  .nav-links{
+    flex:  1;
+    text-align: right;
+  }
+  
+  .nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  
+  .nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  
+  .nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  
+  .nav-links ul li:hover::after{
+    width: 100%;
+  }
+  
+  .text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .text-box h1 {
+    font-size: 62px;
+  }
+  
+  .text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  
+  nav .fa{
+    display: none;
+  }
+  
+  @media(max-width: 700px) {
+    .text-box h1{
+      font-size: 20px;
+    }
+    .nav-links ul li {
+      display: block;
+    }
+    .nav-links {
+      position: absolute;
+      background: #f44336;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 0.6s;
+    }
+    nav .fa{
+      display: block;
+      color: #fff;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+    .nav-links ul{
+      padding: 30px;
+    }
+  }
+  
+  h1{
+    font-size: 36px;
+    font-weight: 600;
+  }
+  
+  p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+  }
+  
+  .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .food {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  .food-col {
+  
+    flex-basis: 31%;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .food-col img {
+    width: 100%;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: -50px;
+    padding-bottom: -20px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+  }
+  
+  .layer:hover {
+    background: rgba(193, 47, 47, 0.7);
+  }
+  
+    @media(max-width: 700px) {
+      .row{
+        flex-direction: column;
+      }
+      .food-col {
+        flex-direction: column;
+      }
+  
+      }
+      
+  
+  .layer h3 {
+    width: 100%;
+    padding-top: 50%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 36px;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    transition: 0.6s;
+  }
+  
+  /*-------Malay Food--------*/
+  
+  .malay {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+  }
+  
+  .malay h3 {
+    padding-top: 5px;
+    text-align: center;
+  }
+  
+  .malay p {
+    padding-bottom: 20px;
+  }
+  
+  .malay-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    text-align: justify;
+    overflow: hidden;
+  }
+  
+  .malay-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-top: 0px;;
+    border-radius: 10px;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    overflow: hidden;
+	  border-radius: 10px;
+	  transition: transform 0.3s;
+    
+  }
+  
+  
+  /*-------street food-------*/
+  .chinese-food {
+    min-height: 120vh;
+    width: 100%;
+    background: #fff3f3;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .chinese h1 {
+    padding-top: 15px;
+    color:#000000;
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  .chinese h5 {
+    padding-top: 15px;
+    color:#050505;
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  .chinese p {
+    text-align: center;
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #000000;
+  }
+  
+  .chinese-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: auto;
+    padding: 20px 10px;
+    height: 100%;
+  
+  }
+  
+  .chinese-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-top: 0px;;
+    border-radius: 10px;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    overflow: hidden;
+  }
+  
+  .row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .chinese-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+  }
+  @media(max-width: 700px) {
+    .row{
+      flex-direction: column;
+    }
+  
+  }
+  /*Last section indian food*/
+ /* Set margin-top */
+.item {
+    margin-top: 20px; /* Adjust the value as needed */
+}
+
+/* Set image size */
+.item .image-container img {
+    width: 60%; /* Adjust the width as needed */
+    height: 40; /* Maintain aspect ratio */
+    display: block; /* Ensure the image is a block element */
+    
+
+}
+.item .image-container {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center items horizontally */
+}
+
+
+/* Set background color and center images */
+.item {
+    background-color: #f9f9f9; /* Use your preferred background color */
+    padding: 20px; /* Add padding for spacing */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+}
+
+
+/*sec nav bar*/
+.sec-nav nav {
+  position: relative;
+  width: 524px;
+  height: 50px;
+  background-color: #222;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.sec-nav nav a {
+  position: relative;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 23px;
+  z-index: 1;
+}
+
+.sec-nav nav span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95px;
+  height: 100%;
+  background: linear-gradient(45deg, #4f1919, #ff3333);
+  border-radius: 8px;
+  transition: left 0.5s ease; /* Changed to 0.5s */
+}
+
+.sec-nav nav a:nth-child(1):hover~span {
+  left: 0;
+}
+
+.sec-nav nav a:nth-child(2):hover~span {
+  left: 95px;
+}
+
+.sec-nav nav a:nth-child(3):hover~span {
+  left: 189px;
+  width: 110px;
+}
+
+.sec-nav nav a:nth-child(4):hover~span {
+  left: 289px;
+  width: 115px;
+}
+
+.sec-nav nav a:nth-child(5):hover~span {
+  left: 413px;
+  width: 110px;
+}
+
+  

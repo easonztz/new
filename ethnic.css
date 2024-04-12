@@ -1,0 +1,742 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Tilt+Neon&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: #fff;
+    height: 60px;
+    margin: 15px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+  
+.navbar-brand img {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+    padding: 2px;
+    background-color: #000;
+  }
+
+.login-button{
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-button:hover{
+    background-color: #F59A39;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar-toggler-icon{
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    background-color: #fff;
+}
+
+.navbar-toggler:focus, 
+.btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+ul .nav-link{
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+ul .nav-link:hover,
+ul .nav-link.active{
+    color: #000;
+}
+
+@media(min-width: 991px){
+    ul .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #F59A39;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    ul .nav-link:hover::before,
+    ul .nav-link.active::before{
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    width: 1140px;
+    max-width: 80%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+header nav a{
+    color: #fff;
+    margin-right: 5px;
+    padding:5px 10px;
+    font-size: 14px;
+    transition: 0.2s;
+    font-family: "Merriweather", serif;
+    font-weight: 500;
+    font-style: bold;
+}
+
+header nav a.active, header nav a:hover{
+    background:#eee;
+    color: #000;
+    border-radius: 2px;
+}
+
+logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.slider{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    margin-top: -50px;
+}
+
+.slider .list .item{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0 0 0 0;
+}
+
+.slider .list .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider .list .item .content{
+    position: absolute;
+    top: 25%;
+    width: 1140px;
+    max-width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 30%;
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 0 5px 10px #0004;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.slider .list .item .content .title{
+    font-size: 5em;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+
+.slider .list .item .content .description{
+    font-size: 16px;
+}
+
+.slider .list .item .content .button{
+    margin-top: 20px;
+}
+
+.slider .list .item .content .button button{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 8px 16px;
+    font-family: "Tilt Neon", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+    "XROT" 0,
+    "YROT" 0;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: 0.4s;
+}
+
+.slider .list .item .content .button button:hover{
+    background-color: #000;
+    color: #eee;
+}
+
+.thumbnail{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+    color: #fff;
+    font-weight: bold;
+}
+
+.thumbnail .item{
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.thumbnail .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.nextPrevArrows {
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    z-index: 100;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nextPrevArrows button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: none;
+    color: #000;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nextPrevArrows button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.slider .list .item:nth-child(1){
+    z-index: 1;
+}
+
+.slider .list .item:nth-child(1) .content .title,
+.slider .list .item:nth-child(1) .content .description,
+.slider .list .item:nth-child(1) .content .button{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 0.5s 1s linear 1 forwards;
+}
+
+@keyframes showContent{
+    to{
+        transform: translateY(0px);
+        filter: blur(00px);
+        opacity: 1;
+    }
+}
+
+.slider .list .item:nth-child(1) .content .title{
+    animation-delay: 0.4s;
+}
+
+.slider .list .item:nth-child(1) .content .description{
+    animation-delay: 0.6s;
+}
+
+.slider .list .item:nth-child(1) .content .button{
+    animation-delay: 0.8s;
+}
+
+/*Animation for next button click*/
+.slider.next .list .item:nth-child(1) img{
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    border-radius: 30px;
+    animation: showImage 0.5s linear 1 forwards;
+}
+
+@keyframes showImage{
+    to{
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+.slider.next .thumbnail .item:nth-child(1) {
+    overflow: hidden;
+    animation: showThumbnail 0.5s linear 1 forwards;
+}
+
+.slider.prev .list .item img{
+    z-index: 100;
+}
+
+@keyframes showThumbnail{
+    from{
+        width: 0;
+        opacity: 0;
+    }
+}
+
+.slider.next .thumbnail{
+    animation: effectNext .5s linear 1 forwards;
+}
+
+@keyframes effectNext{
+    from{
+        transform: translateX(150px);
+    }
+}
+
+/*Animation for prev button click*/
+.slider.prev .list .item:nth-child(2) {
+    z-index: 2;
+}
+
+.slider.prev .list .item:nth-child(2) img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: outFrame 0.5s linear 1 forwards;
+}
+
+@keyframes outFrame{
+    to{
+        width: 50px;
+        height: 220px;
+        bottom: 50px;
+        left: 50%;
+        border-radius: 20px;
+    }
+}
+
+.slider.prev .thumbnail .item:nth-child(1) {
+    overflow: hidden;
+    opacity: 0;
+    animation: showThumbnail 0.5s linear 1 forwards;
+}
+
+.slider.prev .list .item:nth-child(1) .content .title,
+.slider.prev .list .item:nth-child(1) .content .description,
+.slider.prev .list .item:nth-child(1) .content .button{
+    animation: contentOut 0.5s 1s linear 1 forwards;
+}
+
+@keyframes contentOut {
+    to{
+        transform: translateY(-150px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 678px){
+    .slider .list .item .content{
+        padding-right: 0;
+    }
+
+    .slider .list .item .content .title{
+        font-size: 30px;
+    }
+}
+
+section {
+    padding: 70px 17% 60px;
+  }
+  
+.intro {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(images/thumb-5-colorful-celebrations-malaysia.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+  
+.intro-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 20px;
+}
+  
+.intro-text p {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 22px;
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+.ethnic-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.center-text {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+  }
+  
+.center-text h2 {
+    font-size: var(--h2-font);
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+  
+.box {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+  
+.box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: all 0.3s cubic-bezier(0.499, 0.05, 0.55, 0.95);
+    will-change: filter;
+    display: block;
+}
+  
+.box h6 {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+  
+.box img:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+.malaySec{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 5rem;
+    background-color: #000;
+}
+
+.malaySec-img img{
+    width: 100%;
+    height: auto;
+}
+
+.malaySec-text h2{
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    font-size: 60px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.malaySec-text p{
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #ffffffab;
+    margin-bottom: 35px;
+}
+
+.malaySec-text p a{
+    color: #F8C471;
+    font-style: bold;
+    text-decoration: none;
+}
+
+.malaySec-text p a.active,
+.malaySec-text p a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.chineseSec{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 5rem;
+}
+
+.chineseSec-img img{
+    width: 100%;
+    height: auto;
+}
+
+.chineseSec-text h2{
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.chineseSec-text p{
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #000;
+    margin-bottom: 35px;
+}
+
+.chineseSec-text p a{
+    color: #D35400;
+    font-style: bold;
+    text-decoration: none;
+}
+
+.chineseSec-text p a.active,
+.chineseSec-text p a:hover{
+    text-decoration: underline;
+}
+
+.indianSec{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 5rem;
+    background-color: #000;
+}
+
+.indianSec-img img{
+    width: 100%;
+    height: auto;
+}
+
+.indianSec-text h2{
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    font-size: 60px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.indianSec-text p{
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #ffffffab;
+    margin-bottom: 35px;
+}
+
+@media screen and (max-width: 768px) {
+    .malaySec,
+    .chineseSec,
+    .indianSec {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+.indigenousSec{
+    padding: 0%;
+}
+
+.bp-container{
+    padding: 5rem 1rem;
+}
+
+.bp-header{
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    font-size: 50px;
+    font-weight: 800;
+    color: #000;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.bp-subheader{
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.bp-grid{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+}
+
+.bp-card{
+    position: relative;
+    overflow: hidden;
+}
+
+.bp-card img{
+    height: 300px;
+    width: auto;
+}
+
+.bp-content{
+    position: absolute;
+    left: 50%;
+    bottom: -8rem;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 2rem 1rem;
+    transition: 0.3s;
+    text-align: center;
+    background-image: linear-gradient(to top, var(--primary-color), transparent);
+}
+
+.bp-content h4{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
+.bp-content p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: #ffffffab;
+}
+
+.bp-card:hover .bp-content{
+    bottom: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .content {
+        flex-direction: column; 
+        text-align: center;
+        font-size: 14px;
+    
+    }
+}
+
+.content .image {
+      flex-direction: column;
+      margin:20;
+}
+
+.content .text-box {
+      flex-direction: column;
+      margin:auto;
+        
+}
+
+.info-title{
+      flex-direction: column;
+      margin:auto;
+      text-align: auto;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+  
+#back-to-top:hover {
+    transform: scale(1.1);
+}
+  
+#back-to-top img {
+    width: 30px;
+    height: auto;
+}
+
